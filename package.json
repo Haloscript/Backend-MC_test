@@ -32,8 +32,13 @@
     "env": {
       "node": true
     },
-    "extends": ["prettier", "airbnb-base"],
-    "plugins": ["prettier"],
+    "extends": [
+      "prettier",
+      "airbnb-base"
+    ],
+    "plugins": [
+      "prettier"
+    ],
     "rules": {}
   }
 }

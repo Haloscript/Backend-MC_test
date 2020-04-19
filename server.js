@@ -41,14 +41,14 @@ require("./app/router/User_route.js")(app);
 
 const User = db.user;
 const Good = db.good;
-// db.sequelize
-// 	.sync({
-// 		force: true,
-// 	})
-// 	.then(() => {
-// 		console.log('Drop and Resync with { force: true }');
-// 		initial();
-// 	});
+db.sequelize
+	.sync({
+		force: true,
+	})
+	.then(() => {
+		console.log('Drop and Resync with { force: true }');
+		initial();
+	});
 function initial() {
   for (let i = 0; i < 4; i++) {
     User.create({

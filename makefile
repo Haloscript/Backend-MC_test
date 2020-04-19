@@ -6,13 +6,10 @@ up:
 down:
 	sudo docker-compose down
 
-#пересоздает контейнеры проекта
-restart: sudo down up
+# запуск сервера
+serve:
+	sudo docker-compose exec node npm start
 
-#сбилдить в dev режиме
-dev:
-	sudo docker-compose exec node npm run dev
-
-#сбилдить в prod режиме
-prod:
-	sudo docker-compose exec node npm run build
+# установка зависимостей
+install:
+	sudo docker-compose exec node npm install
