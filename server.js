@@ -52,7 +52,7 @@ db.sequelize
 function initial() {
   for (let i = 0; i < 4; i++) {
     User.create({
-      firstName: `Ирина ${counter + i}`,
+      firstName: `Ирина ${i + i}`,
       lastName: "Попова",
       middleName: "Александровна",
       position: "Бухгалтер",
@@ -67,7 +67,7 @@ function initial() {
       }
     });
     User.create({
-      firstName: `Диас ${counter + i}`,
+      firstName: `Диас ${i + i}`,
       lastName: "Кураков",
       middleName: "",
       position: "Сис Админ",
@@ -82,7 +82,7 @@ function initial() {
       }
     });
     User.create({
-      firstName: `Ильяс ${counter + i}`,
+      firstName: `Ильяс ${i + i}`,
       lastName: "Бекмаханов",
       middleName: "",
       position: "Backend developer",

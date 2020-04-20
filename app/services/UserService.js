@@ -135,7 +135,6 @@ module.exports = class UserService {
         defaults: changeUserData,
       })
         .then(([user, created]) => {
-          console.log("DATA==USER", user, created);
           if (!created) {
             User.update(changeUserData, {
               where: {
@@ -169,7 +168,7 @@ module.exports = class UserService {
           });
         })
         .then(() => {
-          resolve({ code: 0 });
+          resolve({ code: 0, user_id: data.id });
         })
         .catch((err) => reject(err));
     });
