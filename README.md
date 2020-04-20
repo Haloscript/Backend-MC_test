@@ -1,4 +1,11 @@
-# mc
+# mc-backend
+## Project Install steps
+1. make up
+2. make install
+3. make serve
+
+## Command description
+```
 
 ## Project up
 ```
